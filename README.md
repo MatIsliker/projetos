@@ -5,7 +5,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 passos para baixar o projeto:
 
 - baixe do git a url (git clone "https://github.com/MatIsliker/projetos.git")
-- entre na pasta 
+- entre na pasta(projetos)
+- mude para develop(git checkout develop)
 - npm i
 - mude para develop
 - ng server
