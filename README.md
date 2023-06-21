@@ -2,6 +2,14 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.0.
 
+passos para baixar o projeto:
+
+- baixe do git a url (git clone "https://github.com/MatIsliker/projetos.git")
+- entre na pasta 
+- npm i
+- mude para develop
+- ng server
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
