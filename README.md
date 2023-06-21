@@ -8,6 +8,7 @@ passos para baixar o projeto:
 - entre na pasta 
 - npm i
 - mude para develop
+- ng server
 
 ## Development server
 
