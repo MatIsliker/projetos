@@ -1,0 +1,53 @@
+<nav class="mb-5">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+            <a routerLink="/">Home</a>
+        </li>
+        <li class="breadcrumb-item active">
+            Tarefas
+        </li>
+    </ol>
+</nav>
+
+
+<div class="row mb-4">
+    <div class="col-md">
+        <h1 class="h2 border-left pl-2">
+            Tarefas
+        </h1>
+    </div>
+    <div class="col-md">
+        <a routerLink="new" class="btn btn-success float-right">
+            + Novas Tarefas
+        </a>
+    </div>
+</div>
+
+
+<table class="table table-hover">
+    <thead>
+        <tr class="bg-primary text-light">
+            <th>Tarefa</th>
+            <th>Status</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody *ngFor="let category of categoreis.slice(indiceInicial, indiceFinal)">
+        <tr>
+            <td>
+                <strong>{{ category.name }}</strong><br>
+                <small>{{ category.description }}</small>
+            </td>
+            <td class="type_position" [class.text-success]="category.type == 'Concluída'" [class.text-danger]="category.type == 'Pendente'">
+                {{ category.type }}
+            </td>
+            <td class="button_position">
+                <a [routerLink]="[category.id, 'edit']" class="btn btn-outline-info btn-sm mr-2">Editar</a>
+                <button (click)="deletarCategorias(category)" class="btn btn-outline-danger btn-sm">Excluir</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+    <mat-paginator #paginator [length]="categoreis.length" [pageSize]="qtdpaginas" (page)="alterarPagina($event)"
+        aria-label="Select page">
+    </mat-paginator>
