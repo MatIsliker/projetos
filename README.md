@@ -8,7 +8,8 @@ passos para baixar o projeto:
 - entre na pasta(projetos)
 - mude para develop (git fetch) depois (git checkout develop)
 - npm i
-- depois do npm i iremos direto pro node modules copiar e colar uma pasta lá
+- depois do npm i iremos direto pro node modules copiar e colar uma pasta lá, a pasta está na develop, 
+  listaDeTarefas\taskManager\node_modules\chart.js, so copiar e colar no nodeModules
 - mude para develop
 - ng server
 
