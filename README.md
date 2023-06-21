@@ -6,7 +6,7 @@ passos para baixar o projeto:
 
 - baixe do git a url (git clone "https://github.com/MatIsliker/projetos.git")
 - entre na pasta(projetos)
-- mude para develop (git fecth) depois (git checkout develop)
+- mude para develop (git fetch) depois (git checkout develop)
 - npm i
 - mude para develop
 - ng server
