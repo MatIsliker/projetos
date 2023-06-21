@@ -8,6 +8,7 @@ passos para baixar o projeto:
 - entre na pasta(projetos)
 - mude para develop (git fetch) depois (git checkout develop)
 - npm i
+- depois do npm i iremos direto pro node modules copiar e colar uma pasta lá
 - mude para develop
 - ng server
 
